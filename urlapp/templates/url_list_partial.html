@@ -1,0 +1,12 @@
+{% for url in urls %}
+<tr>
+    <td>{{ url.title }}</td>
+    <td><a href="{{ url.original_url }}">{{ url.shortened_url }}</a></td>
+    <td>{{ url.original_url }}</td>
+    <td>{{ url.created_at }}</td>
+    <td>
+        <a href="{% url 'edit_url' url.pk %}">Edit</a>
+        <a href="{% url 'delete_url' url.pk %}">Delete</a>
+    </td>
+</tr>
+{% endfor %}

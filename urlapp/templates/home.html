@@ -1,0 +1,44 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+Home - url shortner
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<header class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-4 text-white">Welcome to url shortner</h1>
+        <p class="lead text-white">achieve your goals, a.</p>
+        <a href="{% url 'add_url' %}" class="btn btn-primary btn-lg">Get Started</a>
+    </div>
+</header>
+
+<!-- Features Section -->
+<section class="features-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-chart-line fa-3x mb-3 text-primary"></i>
+                <h3>url</h3>
+                <p> easy-to-use .</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-heartbeat fa-3x mb-3 text-primary"></i>
+                <h3>save time</h3>
+                <p>njjhbhgfgdcfgxdfvdx</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                <h3>Community Support</h3>
+                <p>Join our community and get support from others on the same journey.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+
+
